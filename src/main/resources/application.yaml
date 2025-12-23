@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: ${SPRING_APPLICATION_NAME}
+  rabbitmq:
+    host: ${SPRING_RABBITMQ_HOST}
+    port: ${SPRING_RABBITMQ_PORT}
+    username: ${SPRING_RABBITMQ_USERNAME}
+    password: ${SPRING_RABBITMQ_PASSWORD}
+
+rabbitmq:
+  queue:
+    name: ${RABBITMQ_QUEUE_NAME}
+    json:
+      name: ${RABBITMQ_QUEUE_JSON_NAME}
+  exchange:
+    name: ${RABBITMQ_EXCHANGE_NAME}
+  binding:
+    routing-key: ${RABBITMQ_BINDING_ROUTING_KEY}
+    json:
+      routing-key: ${RABBITMQ_BINDING_JSON_ROUTING_KEY}
